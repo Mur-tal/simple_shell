@@ -44,7 +44,10 @@ int main(int argc, char **argv)
 	} while (1);
 	exit(EXIT_SUCCESS);
 }
-
+/**
+  * read_cmd - function that reads user input
+  * Return: 0 Always success
+  */
 char *read_cmd(void)
 {
 	char buf[1024];
@@ -94,7 +97,11 @@ char *read_cmd(void)
 	}
 	return (ptr);
 }
-
+/**
+  * parse_and_execute - function takes care of tokenization
+  * @src: pointing to a struct
+  * Return: 0 for sucess
+  */
 int parse_and_execute(struct source_s *src)
 {
 	skip_white_spaces(src);
@@ -107,6 +114,7 @@ int parse_and_execute(struct source_s *src)
 	while (tok && tok != &eof_token)
 	{
 		struct node_s *cmd = parse_simple_command(tok);
+
 		if (!cmd)
 		{
 			break;
