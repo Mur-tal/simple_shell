@@ -26,6 +26,8 @@ int main(int argc, char *argv[])
 		stkn = strtok(command, " \n");
 		char **arr = malloc(sizeof(char *) * 64);
 
+		if (strcmp(arr[0], "exit") == 0)
+			exit(0);
 		arr[0] = stkn;
 		i = 1;
 		while (stkn != NULL)
