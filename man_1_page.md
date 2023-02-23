@@ -129,5 +129,5 @@ none known.  simple_shell does not currently replicate these tasks:
 
 ## AUTHORS
 
-1. Soji Afinjuomo <soji@gmail.com>
+1. Soji Afinjuomo <afinjuomosoji@gmail.com>
 2. Muri Badmus <amurtala@gmail.com>
